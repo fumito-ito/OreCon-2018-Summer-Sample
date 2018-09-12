@@ -12,6 +12,7 @@
 		C53BADB12148D2A900644F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53BADAF2148D2A900644F86 /* Main.storyboard */; };
 		C53BADB32148D2AA00644F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53BADB22148D2AA00644F86 /* Assets.xcassets */; };
 		C53BADB62148D2AA00644F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53BADB42148D2AA00644F86 /* LaunchScreen.storyboard */; };
+		C53BADBE2148D58500644F86 /* ASSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BADBD2148D58500644F86 /* ASSampleViewController.swift */; };
 		C53BADC42148D5C200644F86 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC02148D5C200644F86 /* PINRemoteImage.framework */; };
 		C53BADC52148D5C200644F86 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC12148D5C200644F86 /* AsyncDisplayKit.framework */; };
 		C53BADC62148D5C200644F86 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC22148D5C200644F86 /* PINCache.framework */; };
@@ -27,6 +28,7 @@
 		C53BADB22148D2AA00644F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C53BADB52148D2AA00644F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53BADB72148D2AA00644F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53BADBD2148D58500644F86 /* ASSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASSampleViewController.swift; sourceTree = "<group>"; };
 		C53BADC02148D5C200644F86 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		C53BADC12148D5C200644F86 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
 		C53BADC22148D5C200644F86 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				C53BADB42148D2AA00644F86 /* LaunchScreen.storyboard */,
 				C53BADB72148D2AA00644F86 /* Info.plist */,
 				C5F278022148D9B20058FF87 /* OreCon-2018-Summer-Sample-Bridging-Header.h */,
+				C53BADBD2148D58500644F86 /* ASSampleViewController.swift */,
 			);
 			path = "OreCon-2018-Summer-Sample";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				C53BADAE2148D2A900644F86 /* ViewController.swift in Sources */,
 				C5F278052148D9B30058FF87 /* ASPINRemoteImageDownloader.m in Sources */,
+				C53BADBE2148D58500644F86 /* ASSampleViewController.swift in Sources */,
 				C53BADAC2148D2A900644F86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
