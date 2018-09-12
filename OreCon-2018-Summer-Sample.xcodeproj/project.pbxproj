@@ -12,6 +12,10 @@
 		C53BADB12148D2A900644F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53BADAF2148D2A900644F86 /* Main.storyboard */; };
 		C53BADB32148D2AA00644F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53BADB22148D2AA00644F86 /* Assets.xcassets */; };
 		C53BADB62148D2AA00644F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53BADB42148D2AA00644F86 /* LaunchScreen.storyboard */; };
+		C53BADC42148D5C200644F86 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC02148D5C200644F86 /* PINRemoteImage.framework */; };
+		C53BADC52148D5C200644F86 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC12148D5C200644F86 /* AsyncDisplayKit.framework */; };
+		C53BADC62148D5C200644F86 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC22148D5C200644F86 /* PINCache.framework */; };
+		C53BADC72148D5C200644F86 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53BADC32148D5C200644F86 /* PINOperation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C53BADB22148D2AA00644F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C53BADB52148D2AA00644F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53BADB72148D2AA00644F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53BADC02148D5C200644F86 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
+		C53BADC12148D5C200644F86 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
+		C53BADC22148D5C200644F86 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
+		C53BADC32148D5C200644F86 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53BADC42148D5C200644F86 /* PINRemoteImage.framework in Frameworks */,
+				C53BADC52148D5C200644F86 /* AsyncDisplayKit.framework in Frameworks */,
+				C53BADC62148D5C200644F86 /* PINCache.framework in Frameworks */,
+				C53BADC72148D5C200644F86 /* PINOperation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				C53BADAA2148D2A900644F86 /* OreCon-2018-Summer-Sample */,
 				C53BADA92148D2A900644F86 /* Products */,
+				C53BADBF2148D5C100644F86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +77,17 @@
 			path = "OreCon-2018-Summer-Sample";
 			sourceTree = "<group>";
 		};
+		C53BADBF2148D5C100644F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C53BADC12148D5C200644F86 /* AsyncDisplayKit.framework */,
+				C53BADC22148D5C200644F86 /* PINCache.framework */,
+				C53BADC32148D5C200644F86 /* PINOperation.framework */,
+				C53BADC02148D5C200644F86 /* PINRemoteImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 				C53BADA42148D2A900644F86 /* Sources */,
 				C53BADA52148D2A900644F86 /* Frameworks */,
 				C53BADA62148D2A900644F86 /* Resources */,
+				C53BADC82148D5CA00644F86 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -130,6 +155,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C53BADC82148D5CA00644F86 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 /* Begin PBXSourcesBuildPhase section */
 		C53BADA42148D2A900644F86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +327,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K489QY5CFD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "OreCon-2018-Summer-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +349,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K489QY5CFD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "OreCon-2018-Summer-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
